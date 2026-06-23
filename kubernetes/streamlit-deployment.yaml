@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: house-price-streamlit
+  name: house-price-streamlit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: house-price-streamlit
+  template:
+    metadata:
+      labels:
+        app: house-price-streamlit
+    spec:
+      containers:
+        - name: house-price-streamlit
+          image: cvenugopal2005/house-price-streamlit:initial
+          ports:
+            - containerPort: 8501

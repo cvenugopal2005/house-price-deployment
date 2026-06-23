@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: house-price-fastapi
+  name: house-price-fastapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: house-price-fastapi
+  template:
+    metadata:
+      labels:
+        app: house-price-fastapi
+    spec:
+      containers:
+        - name: house-price-fastapi
+          image: cvenugopal2005/house-price-fastapi:initial
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "100m"
+              memory: "128Mi"
