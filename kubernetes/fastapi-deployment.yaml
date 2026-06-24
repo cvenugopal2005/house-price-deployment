@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: house-price-fastapi
-          image: cvenugopal2005/house-price-fastapi:c0b42a6
+          image: cvenugopal2005/house-price-fastapi:031542c
           ports:
             - containerPort: 8000
           resources:

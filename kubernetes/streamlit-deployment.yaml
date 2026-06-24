@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: house-price-streamlit
-          image: cvenugopal2005/house-price-streamlit:c0b42a6
+          image: cvenugopal2005/house-price-streamlit:031542c
           ports:
             - containerPort: 8501
