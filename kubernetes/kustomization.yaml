@@ -6,4 +6,4 @@ resources:
   - fastapi-service.yaml
   - streamlit-deployment.yaml
   - streamlit-service.yaml
-  
+  - fastapi-scaledobject.yaml
